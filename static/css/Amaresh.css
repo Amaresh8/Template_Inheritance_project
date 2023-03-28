@@ -1,0 +1,82 @@
+body
+{
+    margin: 0px;
+}
+header
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+header>#v1>a
+{
+    padding:6px 15px;
+    background-color: orchid;
+    margin: 20px;
+    text-decoration: none;
+    border-radius: 1px 5px;
+    outline: none;
+    border: none;
+    color: beige;
+    box-shadow: 0px 0px 0px 0px  white;
+}
+header>#v1>a:hover
+{
+    box-shadow: 2px 2px white;
+}
+#v2
+{
+    background: url(../../../app/static/images/Web06.jpg) no-repeat 0px 0px scroll;
+    background-size: cover;
+    height: 100vh;
+}
+#v2>.Wrapper
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: inherit;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#v2>.Wrapper>p
+{
+    font-size: large;
+}
+#v2>.Wrapper>button
+{
+    background: orchid;
+    border: none;
+    outline: none;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 2px 10px;
+    color: white;
+}
+@media (min-width:500px) and (max-width:600px)
+{
+    body
+    {
+        background: white;
+
+    }
+    div>h1:nth-child(2)
+    {
+        display: none;
+    }
+   
+}
+@media (min-width:700px) and (max-width:900px)
+{
+    body
+    {
+        background:black;
+    }
+    div>h1:nth-child(2)
+    {
+        display: none;
+    }
+}

@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}
+    <title>Amaresh Reddy</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Amaresh.css' %}">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><span style="color: orchid;">Chinnavula</span>Amaresh</h1>
+        </div>
+        <div id="v1">
+           <a href=""class="btn btn-white">Home</a>
+           <a href=""class="btn btn-white">About</a>
+           <a href=""class="btn btn-white">Family</a>
+           <a href=""class="btn btn-white">Information</a>
+        </div>
+    </header>
+    <div id="v2">
+        <div class="Wrapper">
+            <h1>Welcome To<span style="color: orchid;">AMARESH</span></h1>
+            <p>Amaresh Misra is a proponent of several conspiracy theories. He has claimed that the 2008 Mumbai attacks were organized jointly by the CIA, Mossad and RSS. According to him, the Intelligence Bureau was behind the killing of the Mumbai Police's Anti-Terrorist Squad chief Hemant Karkare. He has also blamed BJP and RSS for the 2012 Assam violence, and MNS for the Azad Maidan riots.[5] AltNews.in reported that Amaresh Misra wrote a conspiracy theory about Ankit Saxena's murder.
+                He wanted to rewrite modern Indian History to reflect Indian perspective instead of the British accounts</p>
+            {% block body_block %}
+            <button class="btn btn-danger">Join Now</button>
+            {% endblock %}
+        </div>
+    </div>
+    <!-- "Connecting JS FILES (MDB5) " -->
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+</body>
+</html>
